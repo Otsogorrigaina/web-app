@@ -2,26 +2,26 @@ import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 import uiRouter from 'angular-ui-router';
 
-import template from './otsogorri-app.html';
+import template from './webapp.html';
 import { name as Panels } from '../panels/panels';
 
-class OtsogorriApp {}
+const name = 'webapp';
 
-const name = 'otsogorriApp';
+class Webapp {}
 
 // create a module
 export default angular.module( name, [
-  angularMeteor,
   Panels,
-  'accounts.ui',
-  uiRouter ])
-  .component(name, {
-    template,
-    controllerAs: name,
-    controller: OtsogorriApp
-  })
-  .config(config)
-  .run(run);
+  uiRouter,
+  angularMeteor ])
+    .component(name, {
+      templateUrl: 'imports/ui/components/webapp/webapp.html',
+      controller: Webapp,
+      controllerAs: name
+    }
+)
+.config(config)
+.run(run);
 
 function config($locationProvider, $urlRouterProvider) {
   'ngInject';
@@ -35,7 +35,7 @@ function run($rootScope, $state) {
 
   $rootScope.$on('$stateChangeError', (event, toState, toParams, fromState, fromParams, error) => {
     if (error === 'AUTH_REQUIRED') {
-     //$state.go('partidos');
+      $state.go('app');
     }
   });
 }
