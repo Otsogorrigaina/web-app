@@ -7,11 +7,11 @@ const name = 'panels';
 
 class Panels {}
 
-// create a module
+// create a module with a componente
 export default angular.module(name, [
   angularMeteor ])
   .component(name, {
-    templateUrl: 'imports/ui/components/panels/panels.html',
+    templateUrl: template,
     controller: Panels,
     controllerAs: name
   });

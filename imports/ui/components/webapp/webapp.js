@@ -9,13 +9,13 @@ const name = 'webapp';
 
 class Webapp {}
 
-// create a module
+// create a module with a componente
 export default angular.module( name, [
   Panels,
   uiRouter,
   angularMeteor ])
     .component(name, {
-      templateUrl: 'imports/ui/components/webapp/webapp.html',
+      templateUrl: template,
       controller: Webapp,
       controllerAs: name
     }
