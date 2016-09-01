@@ -1,6 +1,13 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 
-import { name as Webapp } from '../imports/ui/components/webapp/webapp';
+import { name as webMain } from '../imports/ui/components/webMain/webMain';
+import { name as webHeader } from '../imports/ui/components/webHeader/webHeader';
+import { name as webFooter } from '../imports/ui/components/webFooter/webFooter';
 
-angular.module('otsogorriweb-app', [ angularMeteor, Webapp]);
+angular.module('otsogorriweb-app', [
+  angularMeteor,
+  webMain,
+  webHeader,
+  webFooter
+]);

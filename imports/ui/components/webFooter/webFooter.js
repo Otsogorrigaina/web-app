@@ -1,11 +1,11 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 
-import template from './panels.html';
+import template from './webFooter.html';
 
-const name = 'panels';
+const name = 'webFooter'; // Es lo que otorga el elemento de HTML: <web-footer></web-footer> 
 
-class Panels {}
+class WebFooter {}
 
 // create a module with a componente
 export default angular.module( name, [
@@ -13,7 +13,7 @@ export default angular.module( name, [
   angularMeteor ])
     .component(name, {
       templateUrl: template,
-      controller: Panels,
+      controller: WebFooter,
       controllerAs: name
     }
 );
