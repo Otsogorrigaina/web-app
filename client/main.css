@@ -16,7 +16,7 @@ header, header .logo, header .title, header .slogan{
 	width: 100%;
 }
 
-header .intro{
+.intro{
 	width:90%;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
@@ -35,13 +35,13 @@ header .logo img {
 	max-width:100px;
 }
 	
-header .intro .title{
+.intro .title{
 	text-align:center;
 	font-size:1.2rem;
 	margin-bottom:5px;
 }
 
-header .intro .slogan{
+.intro .slogan{
 	color:white;
 	text-align:center;
 	font-size:0.9rem;
@@ -73,7 +73,7 @@ nav article span{
 
 @media only screen and (min-width: 480px){
 
-	header .intro{
+	.intro{
 		width:96%;
 		border-top: 2.5px solid black;
 		border-bottom: 2.5px solid black;
@@ -87,13 +87,13 @@ nav article span{
 		max-width:120px;
 	}
 
-	header .intro .title{
+	.intro .title{
 		text-align:center;
 		font-size:1.2rem;
 		margin-bottom:5px;
 	}
 
-	header .intro .slogan{
+	.intro .slogan{
 		color:white;
 		text-align:center;
 		font-size:1rem;
@@ -121,10 +121,10 @@ nav article span{
 
 @media only screen and (min-width: 768px){
 
-	header .intro .title{
+	.intro .title{
 	}
 
-	header .intro .slogan{
+	.intro .slogan{
 	}
 
 	nav {
@@ -149,7 +149,7 @@ nav article span{
 
 @media only screen and (min-width: 1024px){
 
-	header .intro{
+	.intro{
 		width:98%;
 	}
 
@@ -161,10 +161,10 @@ nav article span{
 		margin-left:15px;
 	}
 
-	header .intro .title{
+	.intro .title{
 	}
 
-	header .intro .slogan{
+	.intro .slogan{
 	}
 
 	nav {
@@ -187,10 +187,10 @@ nav article span{
 	header .logo img {
 	}
 
-	header .intro .title{
+	.intro .title{
 	}
 
-	header .intro .slogan{
+	.intro .slogan{
 	}
 
 	nav {
