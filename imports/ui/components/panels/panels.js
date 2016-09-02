@@ -5,7 +5,15 @@ import template from './panels.html';
 
 const name = 'panels';
 
-class Panels {}
+class Panels {
+  constructor($stateParams, $scope, $reactive) {
+    'ngInject';
+    $reactive(this).attach($scope);
+    this.helpers({
+    });
+  }
+
+}
 
 // create a module with a componente
 export default angular.module( name, [
