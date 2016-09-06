@@ -151,30 +151,40 @@ nav article span{
 
 @media only screen and (min-width: 1024px){
 
+	header{
+		width:14vw;
+	}
+
 	.intro{
-		width:98%;
-		border-top:0px;
-		border-bottom: 2.5px solid black;
-		margin:0 auto;
-		padding:10px 0 10px 0; 
-		margin-bottom:30px;
-		height:150px;
+		width:87.7vw;
+		margin-left:10vw;
+		margin-top: -130px;
+		align-content: center;
+		margin-bottom: 55px;
 	}
 
 	header .logo{
 		text-align:left;
-		position:absolute;
+		background-color:#9fae44;
+		width:100%;
+
 	}
 
 	header .logo img {
-		margin-left:15px;
+		margin-left:1vw;
+		margin-right:1vw;
+		width:120px;
+		background-color:#9fae44;
+		padding-right:0.7vw;
+		
 	}
 
 	.intro .title{
-		margin-top:50px;
+		margin-left:1.5vw;
 	}
 
 	.intro .slogan{
+		margin-left:1.5vw;
 	}
 
 	nav {
@@ -198,9 +208,11 @@ nav article span{
 	}
 
 	.intro .title{
+		margin-left:2vw;
 	}
 
 	.intro .slogan{
+		margin-left:2vw;
 	}
 
 	nav {
