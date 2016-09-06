@@ -121,6 +121,8 @@ nav article span{
 
 @media only screen and (min-width: 768px){
 
+
+
 	.intro .title{
 	}
 
@@ -151,10 +153,17 @@ nav article span{
 
 	.intro{
 		width:98%;
+		border-top:0px;
+		border-bottom: 2.5px solid black;
+		margin:0 auto;
+		padding:10px 0 10px 0; 
+		margin-bottom:30px;
+		height:150px;
 	}
 
 	header .logo{
 		text-align:left;
+		position:absolute;
 	}
 
 	header .logo img {
@@ -162,6 +171,7 @@ nav article span{
 	}
 
 	.intro .title{
+		margin-top:50px;
 	}
 
 	.intro .slogan{
@@ -173,7 +183,7 @@ nav article span{
 	}
 
 	nav article{
-		width:30.5%;
+		width:23%;
 		background-color:transparent;
 	}
 
