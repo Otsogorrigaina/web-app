@@ -3,6 +3,10 @@ import angularMeteor from 'angular-meteor';
 import uiRouter from 'angular-ui-router';
 
 import { name as Panels } from '../panels/panels';
+import { name as SectionBoulder } from '../sectionBoulder/sectionBoulder';
+import { name as SectionExtraescolares } from '../sectionExtraescolares/sectionExtraescolares';
+import { name as SectionAsociacion } from '../sectionAsociacion/sectionAsociacion';
+import { name as sectionParticipacion } from '../sectionParticipacion/sectionParticipacion';
 
 import template from './webMain.html';
 const name = 'webMain';
@@ -12,6 +16,10 @@ class WebMain {}
 // create a module with a componente
 export default angular.module(name, [
   Panels,
+  SectionExtraescolares,
+  //SectionAsociacion,
+  //SectionParticipacion,
+  //SectionBoulder,
   uiRouter,
   angularMeteor ])
   .component(name, {
