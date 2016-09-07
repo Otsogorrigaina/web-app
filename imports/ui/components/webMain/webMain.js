@@ -6,7 +6,7 @@ import { name as Panels } from '../panels/panels';
 import { name as SectionBoulder } from '../sectionBoulder/sectionBoulder';
 import { name as SectionExtraescolares } from '../sectionExtraescolares/sectionExtraescolares';
 import { name as SectionAsociacion } from '../sectionAsociacion/sectionAsociacion';
-import { name as sectionParticipacion } from '../sectionParticipacion/sectionParticipacion';
+import { name as SectionParticipacion } from '../sectionParticipacion/sectionParticipacion';
 
 import template from './webMain.html';
 const name = 'webMain';
@@ -17,9 +17,9 @@ class WebMain {}
 export default angular.module(name, [
   Panels,
   SectionExtraescolares,
-  //SectionAsociacion,
-  //SectionParticipacion,
-  //SectionBoulder,
+  SectionAsociacion,
+  SectionParticipacion,
+  SectionBoulder,
   uiRouter,
   angularMeteor ])
   .component(name, {

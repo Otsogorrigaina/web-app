@@ -2,10 +2,10 @@ import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 import uiRouter from 'angular-ui-router';
 
-import template from './sectionExtraescolares.html';
-const name = 'sectionExtraescolares';
+import template from './sectionBoulder.html';
+const name = 'sectionBoulder';
 
-class SectionExtraescolares {
+class SectionBoulder {
   constructor($stateParams, $scope, $reactive) {
     'ngInject';
     $reactive(this).attach($scope);
@@ -19,15 +19,15 @@ export default angular.module(name, [angularMeteor, uiRouter])
 	.component(name, {
 		templateUrl: template,
 		controllerAs: name,
-		controller: SectionExtraescolares
+		controller: SectionBoulder
 	})
 	.config(config);
 
 function config($stateProvider) {
 	'ngInject';
   $stateProvider
-    .state('extraescolares', {
-      url: '/extraescolares',
-      template: '<section-extraescolares></section-extraecolares>'
+    .state('boulder', {
+      url: '/boulder',
+      template: '<section-boulder></section-boulder>'
     });
 }
