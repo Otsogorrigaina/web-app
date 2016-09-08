@@ -33,6 +33,7 @@ header .logo{
 header .logo img {
 	width:30%;
 	max-width:100px;
+	background-color:#9fae44;
 }
 	
 .intro .title{
@@ -186,14 +187,16 @@ nav article span{
 	}
 
 	.intro{
-    	width: 80;
+		width:98%;
     	margin: 0 auto;
-    	margin-left: 1.5%;
-    	margin-right: 1%;
+		z-index:5;
 	}
 
 	header .logo{
 		width:120px;
+		margin-right:-120px;
+		z-index:10;
+
 	}
 
 	header .logo img {
