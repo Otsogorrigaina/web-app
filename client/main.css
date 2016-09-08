@@ -1,5 +1,5 @@
-/* Resolución de la más pequeña hasta 320px en portrait */
-
+/* RESOLUCION GENERAL (MOBILE FIRST)*/
+/*ESTILOS GENERALES*/
 * {
 	color:black;
 	font-size:16px;
@@ -7,9 +7,35 @@
 }
 
 body {
+	/*display: flex;*/
 	background-color:#9fae44;
 	padding:0px;
-	margin:0px;
+	margin: 0px;
+}
+/*
+.page {
+	display:flex;
+	flex-flow: column;
+	align-items:center;
+}
+*/
+
+.container {
+	/*margin: 0, 1%;*/
+}
+
+/*Colores corporativos*/
+.red {
+	color: #a53329;
+}
+
+.verde {
+	color: #9fae44;
+}
+
+
+/*HEADER PAGE*/
+#web-header {
 }
 
 header, header .logo, header .title, header .slogan{
@@ -21,7 +47,7 @@ header, header .logo, header .title, header .slogan{
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	margin:0 auto;
-	padding:15px 0 15px 0; 
+	padding:15px 0 15px 0;
 	margin-bottom:15px;
 }
 
@@ -33,9 +59,9 @@ header .logo{
 header .logo img {
 	width:30%;
 	max-width:100px;
-	background-color:#9fae44;
+	/*background-color:#9fae44;*/
 }
-	
+
 .intro .title{
 	text-align:center;
 	font-size:1.2rem;
@@ -49,32 +75,37 @@ header .logo img {
 	font-style:italic;
 }
 
-nav {
+/*MAIN PAGE*/
+#web-main {
+}
+
+.panels {
 	display:flex;
-	flex-flow: column wrap;	
+	flex-flow: column;
 	align-items:center;
 }
 
-nav article{
+.panels article{
 	width:75%;
 	max-width:270px;
 	background-color:transparent;
 	margin-bottom: 10px;
 }
 
-nav article img{
+.panels article img{
 	width:100%;
 	border:2px solid white;
 	margin-bottom: 5px;
 }
 
-nav article span{
+.panels article span{
 	font-size:0.9rem;
 }
 
+/*MAIN PAGE*/
 .section .section-header{
 	display:flex;
-	flex-flow: column wrap;	
+	flex-flow: column wrap;
 	align-items:center;
 	margin-top:-10px;
 }
@@ -93,15 +124,27 @@ nav article span{
 	margin-top:-10px;
 }
 
+/*FOOTER PAGE*/
+#web-footer {
+}
 
+.footer{
+	width: 100%;
+	background: #000;
+	border-top: 2px solid #000;
+}
+
+/* RESOLUCION MAS DE 480px */
 @media only screen and (min-width: 480px){
+	/*ESTILOS GENERALES*/
 
+	/*HEADER PAGE*/
 	.intro{
 		width:96%;
 		border-top: 2.5px solid black;
 		border-bottom: 2.5px solid black;
 		margin:0 auto;
-		padding:10px 0 10px 0; 
+		padding:10px 0 10px 0;
 		margin-bottom:30px;
 	}
 
@@ -122,21 +165,21 @@ nav article span{
 		font-size:1rem;
 	}
 
-	nav {
-		display:flex;
+	/*MAIN PAGE*/
+	.panels {
 		flex-flow: row wrap;
 		justify-content: space-between;
 		margin-left:7.5%;
 		margin-right:7.5%;
 	}
 
-	nav article{
+	.panels article{
 		width:46%;
 		background-color:transparent;
 		max-width:400px;
 	}
 
-	nav article span{
+	.panels article span{
 		font-size:2.45vw;
 	}
 
@@ -144,31 +187,28 @@ nav article span{
 		margin-top:-25px;
 	}
 
+	/*FOOTER PAGE*/
+
 }
 
+/* RESOLUCION MAS DE 768px */
 @media only screen and (min-width: 768px){
 
-	.intro .title{
-	}
+	/*HEADER PAGE*/
 
-	.intro .slogan{
-	}
-
-	nav {
-		display:flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
+	/*MAIN PAGE*/
+	.panels {
 		margin-left:8%;
 		margin-right:8%;
 	}
 
-	nav article{
-		width:45%;
+	.panels article{
+		width:30%;
 		max-width:400px;
 		background-color:transparent;
 	}
 
-	nav article span{
+	.panels article span{
 		font-size:1rem;
 	}
 
@@ -176,20 +216,17 @@ nav article span{
 		margin-top:-25px;
 	}
 
+	/*FOOTER PAGE*/
+
 }
 
+/* RESOLUCION MAS DE 1024px */
 @media only screen and (min-width: 1024px){
 
-	header{
+	header {
 		width:100%;
 		display:flex;
 		align-items: center;
-	}
-
-	.intro{
-		width:98%;
-    	margin: 0 auto;
-		z-index:5;
 	}
 
 	header .logo{
@@ -205,25 +242,24 @@ nav article span{
 		width:120px;
 	}
 
-	.intro .title{
-
+	.intro{
+		width:98%;
+  	margin: 0 auto;
+		z-index:5;
 	}
 
-	.intro .slogan{
-
-	}
-
-	nav {
+	/*MAIN PAGE*/
+	.panels {
 		margin-left:3%;
 		margin-right:3.5%;
 	}
 
-	nav article{
+	.panels article{
 		width:23%;
 		background-color:transparent;
 	}
 
-	nav article span{
+	.panels article span{
 	}
 
 	.section .section-header{
@@ -240,41 +276,29 @@ nav article span{
 		margin-top:-15px;
 	}
 
+	/*FOOTER PAGE*/
+
 }
 
+/* RESOLUCION MAS DE 1280px */
 @media  only screen and (min-width: 1280px) {
 
-	/*.container{
-		margin-left:
-		margin-right:
-	}*/
+	/*HEADER PAGE*/
 
-	header .logo img {
-	}
-
-	.intro .title{
-
-	}
-
-	.intro .slogan{
-
-	}
-
-	nav {
+	/*MAIN PAGE*/
+	.panels {
 		margin-left:2.5%;
 		margin-right:3%;
 	}
 
-	nav article{
+	.panels article{
 		width:22.5%;
 		background-color:transparent;
 	}
 
-	nav article span{
+	.panels article span{
 	}
 
-	web-footer, footer{
-		clear:both;
-	}	
+	/*FOOTER PAGE*/
 
 }
