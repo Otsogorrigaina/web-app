@@ -244,6 +244,11 @@ nav article span{
 
 @media  only screen and (min-width: 1280px) {
 
+	/*.container{
+		margin-left:
+		margin-right:
+	}*/
+
 	header .logo img {
 	}
 
@@ -266,6 +271,10 @@ nav article span{
 	}
 
 	nav article span{
+	}
+
+	web-footer, footer{
+		clear:both;
 	}	
 
 }
