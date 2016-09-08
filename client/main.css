@@ -71,6 +71,28 @@ nav article span{
 	font-size:0.9rem;
 }
 
+.section .section-header{
+	display:flex;
+	flex-flow: column wrap;	
+	align-items:center;
+	margin-top:-10px;
+}
+
+.section .section-header .section-title{
+	width:100%;
+	text-align:center;
+	font-size:1.5rem;
+}
+
+.section-header .section-description{
+	width:100%;
+	text-align:center;
+	font-size:1.2rem;
+	margin-top:0px;
+	margin-top:-10px;
+}
+
+
 @media only screen and (min-width: 480px){
 
 	.intro{
@@ -117,6 +139,10 @@ nav article span{
 		font-size:2.45vw;
 	}
 
+	.section .section-header{
+		margin-top:-25px;
+	}
+
 }
 
 @media only screen and (min-width: 768px){
@@ -143,6 +169,10 @@ nav article span{
 
 	nav article span{
 		font-size:1rem;
+	}
+
+	.section .section-header{
+		margin-top:-25px;
 	}
 
 }
@@ -191,6 +221,20 @@ nav article span{
 	}
 
 	nav article span{
+	}
+
+	.section .section-header{
+		margin-top:-35px;
+	}
+
+	.section .section-header .section-title{
+		font-size:2.3vw;
+	}
+
+	.section-header .section-description{
+		font-size:1.8vw;
+		margin-top:0px;
+		margin-top:-15px;
 	}
 
 }
