@@ -66,7 +66,7 @@ header .logo{
 header .logo img {
 	width:30%;
 	max-width:100px;
-	/*background-color:#9fae44;*/
+	background-color:#9fae44;
 }
 
 .intro .title{
@@ -83,7 +83,7 @@ header .logo img {
 }
 
 /*MAIN PAGE*/
-#web-main {
+#main {
 	/*height: 70vh;*/
 }
 
@@ -143,6 +143,7 @@ header .logo img {
 	border-top: 2px solid #000;
 	position:absolute;
 	bottom: 0;
+	color:#fff;
 }
 
 /* RESOLUCION MAS DE 480px */
