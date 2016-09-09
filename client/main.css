@@ -69,7 +69,7 @@ header .logo{
 header .logo img {
 	width:30%;
 	max-width:100px;
-	/*background-color:#9fae44;*/
+	background-color:#9fae44;
 }
 
 .intro .title{
@@ -86,12 +86,6 @@ header .logo img {
 }
 
 /*MAIN PAGE*/
-web-main {
-	/*height: 100vh;*/
-	border: 2px solid orange;
-
-}
-
 #main {
 	height: 70vh;
 	border-bottom: 0.2px solid red;
@@ -173,6 +167,7 @@ web-main {
 	border-top: 2px solid #000;
 	position: absolute;
 	bottom: 0;
+	color:#fff;
 }
 
 /* RESOLUCION MAS DE 480px */
