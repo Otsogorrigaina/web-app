@@ -9,6 +9,8 @@ import { name as SectionAsociacion } from '../sectionAsociacion/sectionAsociacio
 import { name as SectionParticipacion } from '../sectionParticipacion/sectionParticipacion';
 import { name as SectionCulturaMedio } from '../sectionCulturaMedio/sectionCulturaMedio';
 import { name as SectionBibliotecaMapas } from '../sectionBibliotecaMapas/sectionBibliotecaMapas';
+import { name as SectionSalidas } from '../sectionSalidas/sectionSalidas';
+
 
 import template from './webMain.html';
 const name = 'webMain';
@@ -19,6 +21,7 @@ class WebMain {}
 export default angular.module(name, [
   Panels,
   SectionExtraescolares,
+  SectionSalidas,
   SectionBibliotecaMapas,
   SectionAsociacion,
   SectionParticipacion,
