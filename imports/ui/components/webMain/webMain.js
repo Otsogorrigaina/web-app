@@ -7,6 +7,7 @@ import { name as SectionBoulder } from '../sectionBoulder/sectionBoulder';
 import { name as SectionExtraescolares } from '../sectionExtraescolares/sectionExtraescolares';
 import { name as SectionAsociacion } from '../sectionAsociacion/sectionAsociacion';
 import { name as SectionParticipacion } from '../sectionParticipacion/sectionParticipacion';
+import { name as SectionCulturaMedio } from '../sectionCulturaMedio/sectionCulturaMedio';
 
 import template from './webMain.html';
 const name = 'webMain';
@@ -20,6 +21,7 @@ export default angular.module(name, [
   SectionAsociacion,
   SectionParticipacion,
   SectionBoulder,
+  SectionCulturaMedio,
   uiRouter,
   angularMeteor ])
   .component(name, {
