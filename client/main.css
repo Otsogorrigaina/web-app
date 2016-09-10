@@ -5,33 +5,14 @@
 	font-size:16px;
 	font-family:Sans-serif;
 }
-
+/*
 html, body {height:100vh; }
-
+*/
 body {
 	background-color:#9fae44;
 	padding:0px;
 	margin: 0px;
 	border-bottom: 12px solid brown;
-}
-/*
-.page {
-	display:flex;
-	flex-flow: column;
-	align-items:center;
-}
-*/
-
-.container {
-	display: inline-flex;
-	flex-flow: column;
-	flex-direction: column;
-	position: absolute;
-	height: 100%;
-	min-height:100%;
-	width: 100%;
-	margin: 0 auto;
-	border-bottom: 5px solid gray;
 }
 
 /*Colores corporativos*/
@@ -43,11 +24,36 @@ body {
 	color: #9fae44;
 }
 
+#web-header {
+	grid-area: header;
+}
+
+#web-main {
+	grid-area: main;
+}
+
+#web-footer {
+	grid-area: footer;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: [inicio-header] 20% [fin-header inicio-main]auto [fin-main inicio-footer]10% [fin-grid];
+	grid-template-areas: "header"
+											 "main"
+											 "footer";
+  grid-row-gap: 15px;
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 5px solid gray;
+}
 
 /*HEADER PAGE*/
 web-header {
-	/*height: 20%;*/
-	min-height: 280px;
+  grid-row-start: inicio-header;
+  grid-row-end: fin-header;
+	/*min-height: 280px;*/
 	border-bottom: 0.2px solid red;
 }
 
@@ -95,7 +101,8 @@ header .logo img {
 /*MAIN PAGE*/
 web-main {
 	/*margin-top: 5px;*/
-	height: 70%;
+	grid-row-start: inicio-main;
+  grid-row-end: fin-main;
 	border-bottom: 0.2px solid red;
 }
 
@@ -178,10 +185,10 @@ web-main {
 
 /*FOOTER PAGE*/
 web-footer {
-	align-self: flex-end;
+	grid-row-start: inicio-footer;
+  grid-row-end: fin-grid;
 	background-color: #000;
 	width: 100%;
-	height: 10%;
 	border-bottom: 0.2px solid red;
 }
 
