@@ -353,7 +353,6 @@ web-footer {
 	/*FOOTER PAGE*/
 	web-footer {
 		/*position: absolute;*/
-		bottom: 0;
 		background-color: #000;
 		height: 10%;
 		border-bottom: 0.2px solid red;
