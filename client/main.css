@@ -98,9 +98,16 @@ web-main {
 	border-bottom: 0.2px solid red;
 }
 
-#main {
-
+#main > div {
+	/*No parece funcionar sin absolute
+	asi que lo ponemos y le damos la misma altura que al padre*/
+  /*HEight necesita siempre ser absolute a no ser que sea un elemento flexbox ?? */
+	position:absolute;
+	width:100%;
+	height: 68%;
+	border-bottom: 4px solid green;
 }
+
 
 /*Panels element*/
 .panels {
@@ -128,44 +135,41 @@ web-main {
 
 /*Section element*/
 .section-page {
+	/*Flex en este padre influye en su comportamiento por defecto y no sucede como en el div padre*/
+	/*por ejemplo parece no funcionar el margin 0 auto*/
 	display:flex;
 	flex-flow: column;
 	width: 95%;
 	margin:0 auto;
-	height: 400px;
-	min-height: 100%;
+	height: 100%;
+	min-height: 65%;
 	border: 2px solid black;
 }
 
-.section-page .section-header{
+.section-header{
 	display:flex;
-	flex-flow: column wrap;
+	flex-flow: column;
 	align-items:center;
-	height: 20%;
-	min-height: 20%;
+	text-align:center;
+	height: 30%;
 	border: 2px solid yellow;
-	/*margin-top:-10px;*/
 }
 
-.section-page .section-header .section-title{
+.section-title{
 	width:100%;
-	text-align:center;
-	font-size:1.5rem;
-}
-
-.section-header .section-description{
-	width:100%;
-	text-align:center;
 	font-size:1.2rem;
-	margin-top:0px;
-	margin-top:-10px;
+}
+
+.section-description{
+	width:100%;
+	font-size:0.7rem;
+	font-weight: bold;
+	margin-top:-5px;
 }
 
 .section-main {
-	min-height: 80%;
-	height: 80%;
+	height: 70%;
 	width: 100%;
-	margin: 0 auto;
 	/*background-color: black;*/
 	border: 2px solid yellow;
 
@@ -173,7 +177,6 @@ web-main {
 
 /*FOOTER PAGE*/
 web-footer {
-	/*position: absolute;*/
 	background-color: #000;
 	height: 10%;
 	border-bottom: 0.2px solid red;
@@ -193,8 +196,35 @@ web-footer {
 	color:#fff;*/
 }
 
+@media only screen and (max-widht: 482px) and (position: portrait){}
+
+@media only screen and (max-widht: 482px) and (position: landscape){
+
+	.section-header{
+		margin-top: -25px;
+		height: 30%;
+		min-height: 200px;
+	}
+
+	.section-title{
+		font-size:1.2rem;
+	}
+
+	.section-description{
+		font-size:0.7rem;
+		margin-top:-5px;
+	}
+
+	.section-main {
+		height: 20%;
+		/*background-color: black;*/
+	}
+
+}
+
+
 /* RESOLUCION MAS DE 480px */
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 482px) {
 	/*ESTILOS GENERALES*/
 
 	/*HEADER PAGE*/
@@ -243,9 +273,22 @@ web-footer {
 		font-size:2.45vw;
 	}
 
-	.section .section-header{
-		margin-top:-25px;
+	.section-header{
+		margin-top: -15px;
+		height: 16%;
 	}
+
+	.section-title{
+		font-size:1.8rem;
+	}
+
+	.section-description{
+		width:100%;
+		font-size:0.9rem;
+		font-weight: bold;
+		margin-top:-5px;
+	}
+
 
 	/*FOOTER PAGE*/
 
@@ -273,9 +316,22 @@ web-footer {
 		font-size:1rem;
 	}
 
-	.section .section-header{
-		margin-top:-25px;
+	.section-header{
+		margin-top: -15px;
+		height: 16%;
 	}
+
+	.section-title{
+		font-size:1.8rem;
+	}
+
+	.section-description{
+		width:100%;
+		font-size:1rem;
+		font-weight: bold;
+		margin-top:-5px;
+	}
+
 
 	/*FOOTER PAGE*/
 
@@ -321,6 +377,25 @@ web-footer {
 		z-index:5;
 	}
 
+
+	.section-header{
+		margin-top: -20px;
+		height: 17%;
+	}
+
+	.section-title{
+		font-size:2rem;
+	}
+
+	.section-description{
+		width:100%;
+		font-size:1.1rem;
+		font-weight: bold;
+		margin-top:-5px;
+	}
+
+
+
 	/*MAIN PAGE*/
 	web-main {
 		/*margin-top: 5px;*/
@@ -344,10 +419,11 @@ web-footer {
 	.panels article span{
 	}
 
-	.section .section-header{
-		margin-top:-35px;
+	.section-header{
+		/*margin-top:-35px;*/
 	}
 
+	/*
 	.section .section-header .section-title{
 		font-size:2.3vw;
 	}
@@ -357,7 +433,7 @@ web-footer {
 		margin-top:0px;
 		margin-top:-15px;
 	}
-
+	*/
 	/*FOOTER PAGE*/
 	web-footer {
 		/*position: absolute;*/
