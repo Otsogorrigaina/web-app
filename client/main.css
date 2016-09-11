@@ -15,10 +15,9 @@ html, body {/*height:100vh;*/ }
 
 body {
 	background-color:#9fae44;
-	padding:0px;
-	margin: 0px;
 	/*border-bottom: 12px solid brown;*/
 }
+
 /*
 .page {
 	display:flex;
@@ -202,17 +201,10 @@ web-footer {
 }
 
 .footer-page{
-	/*width: 100%;*/
-	/*height: 100%;*/
-	/*background: #000;*/
-	/*border-top: 2px solid #000;*/
-	/*position: absolute;
-	bottom: 0;
-	color:#fff;*/
 }
 
 @media only screen and (orientation: landscape){
-	.section-header{
+	/*.section-header{
 		margin-top: -5px;
 		height: 20%;
 		min-height: 200px;
@@ -229,11 +221,19 @@ web-footer {
 
 	.section-main {
 		height: 20%;
-		/*background-color: black;*/
+		/*background-color: black;
+	}*/
+
+	#footer {
+	color:white;
+	position:absolute;
+	width:100%;
+	background:black;
 	}
+
 }
 
-@media only screen and (max-widht: 480px) and (orientation: portrait){
+@media only screen and (max-width: 480px) and (orientation: portrait){
 
 	.section-header{
 		margin-top: -25px;
@@ -254,6 +254,10 @@ web-footer {
 		height: 20%;
 		/*background-color: black;*/
 	}
+
+}
+
+@media only screen and (max-width: 480px) and (orientation: landscape){
 
 }
 
@@ -378,7 +382,7 @@ web-footer {
 	web-header {
 		height: 10%;
 		min-height: 180px;
-		border-bottom: 0.2px solid red;
+		/*border-bottom: 0.2px solid red;*/
 	}
 
 	#header {
@@ -473,7 +477,7 @@ web-footer {
 		/*position: absolute;*/
 		background-color: #000;
 		height: 10%;
-		border-bottom: 0.2px solid red;
+		/*border-bottom: 0.2px solid red;*/
 	}
 
 	#footer {
