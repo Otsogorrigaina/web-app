@@ -6,13 +6,18 @@
 	font-family:Sans-serif;
 }
 
-html, body {height:100vh; }
+html, body{
+	margin:0;
+	padding:0;
+}
+
+html, body {/*height:100vh;*/ }
 
 body {
 	background-color:#9fae44;
 	padding:0px;
 	margin: 0px;
-	border-bottom: 12px solid brown;
+	/*border-bottom: 12px solid brown;*/
 }
 /*
 .page {
@@ -23,15 +28,12 @@ body {
 */
 
 .container {
-	display: inline-flex;
+	display: block;
 	flex-flow: column;
 	flex-direction: column;
-	position: absolute;
-	height: 100%;
 	min-height:100%;
-	width: 100%;
 	margin: 0 auto;
-	border-bottom: 5px solid gray;
+	/*border-bottom: 5px solid gray;*/
 }
 
 /*Colores corporativos*/
@@ -43,12 +45,12 @@ body {
 	color: #9fae44;
 }
 
-
 /*HEADER PAGE*/
 web-header {
-	/*height: 20%;*/
-	min-height: 280px;
-	border-bottom: 0.2px solid red;
+	display:block;
+	min-height: 20vh;
+	/*border-bottom: 0.2px solid red;*/
+	/*background:yellow;*/
 }
 
 #header {
@@ -69,7 +71,7 @@ header .logo, header .title, header .slogan{
 }
 
 header .logo{
-	margin:15px 0 15px 0;
+	padding:13px 0px 11px 0px;
 	text-align:center;
 }
 
@@ -95,22 +97,26 @@ header .logo img {
 /*MAIN PAGE*/
 web-main {
 	/*margin-top: 5px;*/
-	height: 70%;
-	border-bottom: 0.2px solid red;
+	display:block;
+	/*height: 70%;*/
+	/*border-bottom: 0.2px solid red;*/
+	/*background:red;*/
+	min-height: 75vh;
 }
 
 #main > div {
 	/*No parece funcionar sin absolute
 	asi que lo ponemos y le damos la misma altura que al padre*/
   /*HEight necesita siempre ser absolute a no ser que sea un elemento flexbox ?? */
-	position:absolute;
-	width:100%;
+	display:block;
 	height: 68%;
-	border-bottom: 4px solid green;
+	/*border-bottom: 4px solid green;*/
+	margin-bottom:15px;
 }
 
 
 /*Panels element*/
+
 .panels {
 	display:flex;
 	flex-flow: column;
@@ -128,6 +134,7 @@ web-main {
 	width:100%;
 	border:2px solid white;
 	margin-bottom: 5px;
+	margin-left:-2px;
 }
 
 .panels article span{
@@ -135,9 +142,12 @@ web-main {
 }
 
 /*Section element*/
+
 .section-page {
 	/*Flex en este padre influye en su comportamiento por defecto y no sucede como en el div padre*/
+
 	/*por ejemplo parece no funcionar el margin 0 auto*/
+
 	display:flex;
 	flex-flow: column;
 	width: 95%;
@@ -169,8 +179,7 @@ web-main {
 }
 
 .section-main {
-	height: 70%;
-	width: 100%;
+	display:block;
 	/*background-color: black;*/
 	border: 2px solid yellow;
 
@@ -178,15 +187,18 @@ web-main {
 
 /*FOOTER PAGE*/
 web-footer {
-	align-self: flex-end;
+	display:block;
+	clear:both;
 	background-color: #000;
-	width: 100%;
-	height: 10%;
-	border-bottom: 0.2px solid red;
+	/*border-bottom: 0.2px solid red;*/
+	min-height:5vh;
 }
 
 #footer {
 	/*background-color: purple;*/
+	color:white;
+	position:absolute;
+	min-bottom:0px;
 }
 
 .footer-page{
@@ -221,7 +233,7 @@ web-footer {
 	}
 }
 
-@media only screen and (max-widht: 482px) and (orientation: portrait){
+@media only screen and (max-widht: 480px) and (orientation: portrait){
 
 	.section-header{
 		margin-top: -25px;
@@ -245,9 +257,8 @@ web-footer {
 
 }
 
-
 /* RESOLUCION MAS DE 480px */
-@media only screen and (min-width: 482px) {
+@media only screen and (min-width: 481px) {
 	/*ESTILOS GENERALES*/
 
 	/*HEADER PAGE*/
