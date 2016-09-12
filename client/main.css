@@ -382,8 +382,8 @@ web-footer {
 
 	/*HEADER PAGE*/
 	web-header {
-		height: 10%;
 		min-height: 180px;
+		min-height: 10vh;
 		/*border-bottom: 0.2px solid red;*/
 	}
 
@@ -431,6 +431,14 @@ web-footer {
 		font-size:1.1rem;
 		font-weight: bold;
 		margin-top:-5px;
+	}
+
+	web-main{
+		min-height:83vh;
+	}
+
+	web-footer{
+		min-height:7vh;
 	}
 
 }
