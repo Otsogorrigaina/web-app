@@ -168,6 +168,21 @@ web-main {
 	border: 2px solid yellow;
 
 }
+
+	.section-main .line1{
+		height:2px;
+		background-color:black;
+		border:none;
+		font-size:10px;
+	} 
+
+	.section-main .line2{
+		height:2px;
+		background-color:black;
+		border:none;
+		font-size:10px;
+	} 	
+
 	.horarios{
 		background:white;
 		border-collapse:collapse;
