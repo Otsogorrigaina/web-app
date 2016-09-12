@@ -226,13 +226,6 @@ web-footer {
 @media only screen and (min-width: 481px) {
 	/*ESTILOS GENERALES*/
 
-	web-main {
-		/*margin-top: 5px;*/
-		height: 950px;
-		border-bottom: 0.2px solid red;
-	}
-
-
 	/*HEADER PAGE*/
 	.intro{
 		width:96%;
@@ -304,11 +297,7 @@ web-footer {
 @media only screen and (min-width: 769px){
 
 	/*HEADER PAGE*/
-	web-main {
-		/*margin-top: 5px;*/
-		height: 700px;
-		border-bottom: 0.2px solid red;
-	}
+
 	/*MAIN PAGE*/
 	.panels {
 		margin-left:8%;
@@ -351,15 +340,7 @@ web-footer {
 
 	/*HEADER PAGE*/
 	web-header {
-		min-height: 180px;
 		min-height: 10vh;
-		/*border-bottom: 0.2px solid red;*/
-	}
-
-	web-main {
-		/*margin-top: 5px;*/
-		height: 550px;
-		border-bottom: 0.2px solid red;
 	}
 
 	header {
@@ -434,20 +415,6 @@ web-footer {
 		/*margin-top:-35px;*/
 	}
 	/*FOOTER PAGE*/
-}
-
-/* RESOLUCION MAS DE 1280px */
-@media only screen and (min-width: 1281px) {
-	web-footer {
-		/*position: absolute;*/
-		background-color: #000;
-		height: 10%;
-		/*border-bottom: 0.2px solid red;*/
-	}
-
-	#footer {
-		/*background-color: purple;*/
-	}
 }
 
 /* RESOLUCION MAS DE 1280px */
