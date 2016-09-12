@@ -377,8 +377,8 @@ web-footer {
 
 }
 
-/* RESOLUCION MAS DE 1024px */
-@media only screen and (min-width: 1025px){
+/* RESOLUCION MAS DE 800px */
+@media only screen and (min-width: 801px){
 
 	/*HEADER PAGE*/
 	web-header {
@@ -433,7 +433,10 @@ web-footer {
 		margin-top:-5px;
 	}
 
+}
 
+/* RESOLUCION MAS DE 1024px */
+@media only screen and (min-width: 1025px){
 
 	/*MAIN PAGE*/
 	web-main {
