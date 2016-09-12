@@ -387,6 +387,27 @@ web-footer {
 		margin-top:-5px;
 	}
 
+	.section-page{
+		display:flex;
+		flex-flow: row wrap;
+	}
+
+	.section-header{
+		width:100%;
+	}
+
+	.section-main{
+		width:79%;
+		flex-grow:1;
+		bottom:0;
+	}
+
+	aside{
+		width:19%;
+		flex-grow:1;
+		bottom:0;
+	}
+
 	web-main{
 		min-height:83vh;
 	}
