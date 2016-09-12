@@ -168,6 +168,29 @@ web-main {
 	border: 2px solid yellow;
 
 }
+	.horarios{
+		background:white;
+		border-collapse:collapse;
+		width:100%;
+		text-align:center;
+	}
+
+	.horarios tr:first-child{
+		background:gray;
+	}
+
+	.horarios td{
+		width:17%;		
+		border:1px solid black;
+		border-collapse:collapse;		
+		padding-top:1.2vh;
+		padding-bottom:1.2vh;
+	}
+
+	.horarios td:first-child{
+		background:gray;
+		width:15%;
+	}
 
 .section-aside {
 	border: 2px solid yellow;
@@ -217,6 +240,10 @@ web-footer {
 	.section-main {
 		height: 20%;
 		/*background-color: black;*/
+	}
+
+	.horarios td{
+		font-size:0.5rem;
 	}
 
 }
