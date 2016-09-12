@@ -148,7 +148,7 @@ web-main {
 	text-align:center;
 	height: 30%;
 	border: 2px solid yellow;
-	margin-top:-20px;
+	/*margin-top:-20px;*/
 }
 
 		.section-title{
@@ -200,9 +200,9 @@ web-footer {
 @media only screen and (max-width: 480px) and (orientation: portrait){
 
 	.section-header{
-		margin-top: -25px;
+		/*margin-top: -25px;*/
 		height: 30%;
-		min-height: 200px;
+		/*min-height: 200px;*/
 	}
 
 	.section-title{
@@ -275,7 +275,7 @@ web-footer {
 	}
 
 	.section-header{
-		margin-top: -35px;
+		/*margin-top: -35px;*/
 		height: 16%;
 	}
 
@@ -318,7 +318,7 @@ web-footer {
 	}
 
 	.section-header{
-		margin-top: -35px;
+		/*margin-top: -35px;*/
 		height: 16%;
 	}
 
@@ -347,7 +347,7 @@ web-footer {
 	}
 
 	header {
-		width:100%;
+		/*width:100%;*/
 		display:flex;
 		align-items: center;
 	}
@@ -372,7 +372,7 @@ web-footer {
 	}
 
 	.section-header{
-		margin-top: -55px;
+		/*margin-top: -55px;*/
 		height: 17%;
 	}
 
