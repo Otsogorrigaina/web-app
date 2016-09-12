@@ -18,14 +18,6 @@ body {
 	/*border-bottom: 12px solid brown;*/
 }
 
-/*
-.page {
-	display:flex;
-	flex-flow: column;
-	align-items:center;
-}
-*/
-
 .container {
 	display: block;
 	flex-flow: column;
@@ -132,12 +124,15 @@ web-main {
 .panels article img{
 	width:100%;
 	border:2px solid white;
-	margin-bottom: 5px;
+	margin-bottom: -10px;
 	margin-left:-2px;
 }
 
-.panels article span{
+.panels article h3{
+	width: 100%;
 	font-size:0.9rem;
+	font-weight: bold;
+	text-align: center;
 }
 
 /*Section element*/
