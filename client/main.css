@@ -504,6 +504,15 @@ web-footer {
 	.panels article span{
 	}
 
+	/**/
+	.section-main .gallery{
+		width:100%;
+	}
+
+	.section-main .gallery img{
+		width:100%;
+	}
+
 	/*FOOTER PAGE*/
 
 }
