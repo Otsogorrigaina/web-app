@@ -169,6 +169,8 @@ web-main {
 
 }
 
+	/*sección extraescolares*/
+
 	.section-main .line1{
 		height:2px;
 		background-color:black;
@@ -206,6 +208,27 @@ web-main {
 		background:gray;
 		width:15%;
 	}
+
+	/*sección bulder*/
+
+	.section-main.bulder{
+		display:flex;
+		flex-flow: row wrap;
+		padding-top:4vw;
+		padding-bottom:4vw;
+	}
+
+		.section-main.bulder .gallery{
+			display:block;
+			width:92%;
+			margin-left:4%;
+			margin-right:4%;
+		}
+
+			.section-main.bulder .gallery img{
+				width:100%;
+				display:block;
+			}
 
 .section-aside {
 	border-top: 2px solid black;
@@ -260,6 +283,21 @@ web-footer {
 	.horarios td{
 		font-size:0.5rem;
 	}
+
+	/*section bulder*/
+	.section-main.bulder{
+	}
+
+		.section-main .gallery{
+			display:block;
+			width:45%;
+		}
+
+			.section-main .gallery img{
+				width:100%;
+				display:block;
+
+			}
 
 }
 
@@ -331,6 +369,30 @@ web-footer {
 		font-weight: bold;
 		margin-top:-5px;
 	}
+
+	/*sección bulder*/
+
+	.section-main.bulder{
+		display:flex;
+		flex-flow: row wrap;
+		padding-top:3vw;
+		padding-bottom:3vw;
+	}
+
+		.section-main.bulder .gallery{
+			width:47%;
+			display:inline;
+			margin:0;
+		}
+
+		.section-main .gallery:nth-child(2n + 1){
+			margin-left:3%;
+		}
+
+			.section-main.bulder .gallery img{
+				width:100%;
+				display:block;
+			}
 
 
 	/*FOOTER PAGE*/
@@ -409,7 +471,7 @@ web-footer {
 
 	.intro{
 		width:98%;
-  	margin: 0 auto;
+  		margin: 0 auto;
 		z-index:5;
 	}
 
@@ -443,6 +505,30 @@ web-footer {
 		flex-grow:1;
 		bottom:0;
 	}
+
+	/*sección-bulder*/
+
+	.section-main.bulder{
+		display:flex;
+		flex-flow: row wrap;
+		padding-top:1.5vw;
+		padding-bottom:1.5vw;
+	}
+
+		.section-main.bulder .gallery{
+			width:24%;
+			display:inline;
+			margin:0;
+		}
+
+		.section-main .gallery:nth-child(4n + 1){
+			margin-left:2%;
+		}
+
+			.section-main.bulder .gallery img{
+				width:100%;
+				display:block;
+			}	
 
 	.section-aside {
 		width:19%;
@@ -504,14 +590,7 @@ web-footer {
 	.panels article span{
 	}
 
-	/**/
-	.section-main .gallery{
-		width:100%;
-	}
-
-	.section-main .gallery img{
-		width:100%;
-	}
+	/*section-main*/
 
 	/*FOOTER PAGE*/
 
