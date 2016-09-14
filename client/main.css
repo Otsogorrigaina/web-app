@@ -214,15 +214,17 @@ web-main {
 	.section-main.bulder{
 		display:flex;
 		flex-flow: row wrap;
-		padding-top:4vw;
-		padding-bottom:4vw;
+		padding-top:3.5vw;
+		padding-bottom:3.5vw;
+		justify-content:center;
 	}
 
 		.section-main.bulder .gallery{
 			display:block;
 			width:92%;
-			margin-left:4%;
-			margin-right:4%;
+			border:2px solid white;
+			margin-bottom:-2px;
+			
 		}
 
 			.section-main.bulder .gallery img{
@@ -283,21 +285,6 @@ web-footer {
 	.horarios td{
 		font-size:0.5rem;
 	}
-
-	/*section bulder*/
-	.section-main.bulder{
-	}
-
-		.section-main .gallery{
-			display:block;
-			width:45%;
-		}
-
-			.section-main .gallery img{
-				width:100%;
-				display:block;
-
-			}
 
 }
 
@@ -375,18 +362,15 @@ web-footer {
 	.section-main.bulder{
 		display:flex;
 		flex-flow: row wrap;
-		padding-top:3vw;
-		padding-bottom:3vw;
+		padding-top:2.3vw;
+		padding-bottom:2.3vw;
+		justify-content:center;
 	}
 
 		.section-main.bulder .gallery{
 			width:47%;
 			display:inline;
-			margin:0;
-		}
-
-		.section-main .gallery:nth-child(2n + 1){
-			margin-left:3%;
+			margin-left:-2px;
 		}
 
 			.section-main.bulder .gallery img{
@@ -511,18 +495,13 @@ web-footer {
 	.section-main.bulder{
 		display:flex;
 		flex-flow: row wrap;
-		padding-top:1.5vw;
-		padding-bottom:1.5vw;
+		padding-top:1.3vw;
+		padding-bottom:1.3vw;
 	}
 
 		.section-main.bulder .gallery{
-			width:24%;
-			display:inline;
-			margin:0;
-		}
-
-		.section-main .gallery:nth-child(4n + 1){
-			margin-left:2%;
+			width:32%;
+			margin-left:-2px;
 		}
 
 			.section-main.bulder .gallery img{
