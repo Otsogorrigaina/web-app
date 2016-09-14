@@ -1,16 +1,25 @@
-<form>
+<form name="emailSendForm" novalidate>
   <label>Asunto:</label> <br />
-  <input type="text" ng-model="actionEmailSend.email.subject"/>
+  <input type="text"
+         ng-model="actionEmailSend.email.subject"
+         required/>
   <br />
 
   <label>Email:</label> <br />
-  <input type="text" ng-model="actionEmailSend.email.remitente"/>
+  <input type="text"
+         ng-model="actionEmailSend.email.remitente"
+         required/>
   <br />
 
   <label>Mensage:</label> <br />
-  <textarea rows="8" cols="40" ng-model="actionEmailSend.email.message">
+  <textarea rows="8" cols="40"
+            ng-model="actionEmailSend.email.message"
+            required>
   </textarea>
   <br />
 
-  <button ng-click="actionEmailSend.submit()">Enviar</button>
+  <button ng-click="actionEmailSend.submit()"
+          ng-disabled="emailSendForm.$invalid">
+          Enviar
+  </button>
 </form>
