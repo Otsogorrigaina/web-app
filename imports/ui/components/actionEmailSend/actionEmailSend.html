@@ -1,0 +1,16 @@
+<form>
+  <label>Asunto:</label> <br />
+  <input type="text" ng-model="actionEmailSend.email.subject"/>
+  <br />
+
+  <label>Email:</label> <br />
+  <input type="text" ng-model="actionEmailSend.email.remitente"/>
+  <br />
+
+  <label>Mensage:</label> <br />
+  <textarea rows="8" cols="40" ng-model="actionEmailSend.email.message">
+  </textarea>
+  <br />
+
+  <button ng-click="actionEmailSend.submit()">Enviar</button>
+</form>
