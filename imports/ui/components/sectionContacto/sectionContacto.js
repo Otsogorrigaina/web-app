@@ -2,6 +2,8 @@ import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 import uiRouter from 'angular-ui-router';
 
+import { name as ActionEmailSend } from '../actionEmailSend/actionEmailSend';
+
 import template from './sectionContacto.html';
 const name = 'sectionContacto';
 
@@ -15,7 +17,10 @@ class SectionContacto {
 }
 
 // create a module
-export default angular.module(name, [angularMeteor, uiRouter])
+export default angular.module(name, [
+  angularMeteor,
+  ActionEmailSend, 
+  uiRouter])
 	.component(name, {
 		templateUrl: template,
 		controllerAs: name,
