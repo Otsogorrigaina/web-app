@@ -176,14 +176,14 @@ web-main {
 		background-color:black;
 		border:none;
 		font-size:10px;
-	} 
+	}
 
 	.section-main .line2{
 		height:2px;
 		background-color:black;
 		border:none;
 		font-size:10px;
-	} 	
+	}
 
 	.horarios{
 		background:white;
@@ -197,9 +197,9 @@ web-main {
 	}
 
 	.horarios td{
-		width:17%;		
+		width:17%;
 		border:1px solid black;
-		border-collapse:collapse;		
+		border-collapse:collapse;
 		padding-top:1.2vh;
 		padding-bottom:1.2vh;
 	}
@@ -224,7 +224,7 @@ web-main {
 			width:92%;
 			border:2px solid white;
 			margin-bottom:-2px;
-			
+
 		}
 
 			.section-main.bulder .gallery img{
@@ -254,6 +254,20 @@ web-footer {
 }
 
 .footer-page{
+}
+
+
+/*FORMS*/
+.messages {
+  color: red;
+}
+
+form input.ng-invalid.ng-touched {
+  /*background-color: red;*/
+}
+
+form input.ng-valid.ng-touched {
+  /*background-color: green;*/
 }
 
 @media only screen and (orientation: landscape){
@@ -507,7 +521,7 @@ web-footer {
 			.section-main.bulder .gallery img{
 				width:100%;
 				display:block;
-			}	
+			}
 
 	.section-aside {
 		width:19%;

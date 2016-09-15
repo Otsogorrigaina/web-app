@@ -1,25 +1,45 @@
-<form name="emailSendForm" novalidate>
+<form name="contactForm" novalidate>
   <label>Asunto:</label> <br />
   <input type="text"
+         name="subject"
          ng-model="actionEmailSend.email.subject"
          required/>
+  <span class="messages">
+    <span ng-class="{red: contactForm.subject.$error.required}"
+          ng-hide="!contactForm.subject.$error.required">
+          El campo es obligatorio.
+    </span>
+  </span>
   <br />
 
   <label>Email:</label> <br />
   <input type="text"
+         name="remitente"
          ng-model="actionEmailSend.email.remitente"
          required/>
+  <span class="messages">
+    <span ng-class="{red: contactForm.remitente.$error.required}"
+          ng-hide="!contactForm.remitente.$error.required">
+          El campo es obligatorio.
+    </span>
+  </span>
   <br />
 
   <label>Mensage:</label> <br />
   <textarea rows="8" cols="40"
+            name="message"
             ng-model="actionEmailSend.email.message"
             required>
   </textarea>
+  <span class="messages">
+    <span ng-class="{red: contactForm.message.$error.required}"
+          ng-hide="!contactForm.message.$error.required">
+          El campo es obligatorio.
+    </span>
+  </span>
   <br />
 
-  <button ng-click="actionEmailSend.submit()"
-          ng-disabled="emailSendForm.$invalid">
-          Enviar
+  <button type="submit" ng-click="actionEmailSend.submit(contactForm)">
+    Enviar
   </button>
 </form>

@@ -10,16 +10,21 @@ class ActionEmailSend {
     this.email = {};
   }
 
-  submit() {
-    // In your client code: asynchronously send an email
-    Meteor.call( 'sendEmail',
-      null ,
-      this.email.remitente ,
-      this.email.subject ,
-      this.email.message
-    );
-    console.log('submit:', this.email);
-    this.email = {};
+  submit(form) {
+    console.log(form);
+    if (form.$valid === true) {
+      // In your client code: asynchronously send an email
+      Meteor.call( 'sendEmail',
+        null ,
+        this.email.remitente ,
+        this.email.subject ,
+        this.email.message
+      );
+      console.log('submit:', this.email);
+      this.email = {};
+      form.$setPristine(); //vuelve el estado al principio
+      form.$setUntouched();
+    }
   }
 
 }
