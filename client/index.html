@@ -2,26 +2,11 @@
   <base href="/">
 </head>
 
-<body>
-  <div ng-app="otsogorriweb-app" class="container" ng-strict-di="">
+<body ng-app="otsogorriweb-app" ng-strict-di="">
+  <div class="container" >
       <web-header class="block"></web-header>
       <web-main class="block"></web-main>
       <web-footer class="block"></web-footer>
   </div>
-  <!-- Piwik -->
-  <script type="text/javascript">
-    var _paq = _paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//192.168.0.141/piwik/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', '2']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <noscript><p><img src="//192.168.0.141/piwik/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
-  <!-- End Piwik Code -->
-
+  <code-piwik></code-piwik>
 </body>
