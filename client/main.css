@@ -141,49 +141,49 @@ web-main {
 	border: 2px solid black;
 }
 
-.section-header{
-	display:flex;
-	flex-flow: column;
-	align-items:center;
-	text-align:center;
-	height: 30%;
-	border-bottom: 2px solid black;
-	/*margin-top:-20px;*/
-}
-
-		.section-title{
-			width:100%;
-			font-size:1.2rem;
+		.section-header{
+			display:flex;
+			flex-flow: column;
+			align-items:center;
+			text-align:center;
+			height: 30%;
+			border-bottom: 2px solid black;
+			/*margin-top:-20px;*/
 		}
 
-		.section-description{
-			width:100%;
-			font-size:0.7rem;
-			font-weight: bold;
-			margin-top:-5px;
+				.section-title{
+					width:100%;
+					font-size:1.2rem;
+				}
+
+				.section-description{
+					width:100%;
+					font-size:0.7rem;
+					font-weight: bold;
+					margin-top:-5px;
+				}
+
+		.section-main {
+			/*background-color: black;*/
+			/*border: 2px solid yellow;*/
+
 		}
 
-.section-main {
-	/*background-color: black;*/
-	/*border: 2px solid yellow;*/
+				/*sección extraescolares*/
 
-}
+				.section-main .line1{
+					height:2px;
+					background-color:black;
+					border:none;
+					font-size:10px;
+				}
 
-	/*sección extraescolares*/
-
-	.section-main .line1{
-		height:2px;
-		background-color:black;
-		border:none;
-		font-size:10px;
-	}
-
-	.section-main .line2{
-		height:2px;
-		background-color:black;
-		border:none;
-		font-size:10px;
-	}
+				.section-main .line2{
+					height:2px;
+					background-color:black;
+					border:none;
+					font-size:10px;
+				}
 
 	.horarios{
 		background:white;
@@ -262,6 +262,13 @@ web-footer {
   color: red;
 }
 
+form {
+	display:flex;
+	flex-flow: column;
+	/*align-items:center;*/
+
+}
+
 form input.ng-invalid.ng-touched {
   /*background-color: red;*/
 }
@@ -269,6 +276,44 @@ form input.ng-invalid.ng-touched {
 form input.ng-valid.ng-touched {
   /*background-color: green;*/
 }
+
+textarea,
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=email] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+  font-size: 16px;
+  color: black;
+  border-radius: 2px 2px 2px 2px;
+}
+
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/*
+input[type=text]:hover,
+input[type=password]:hover,
+label:hover ~ input[type=text],
+label:hover ~ input[type=password] {
+    background:rgb(242, 242, 242);!important;
+}
+
+input[type=submit]:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.3),
+    inset 0 -10px 10px rgba(255,255,255,0.1);
+}
+*/
+
+
 
 @media only screen and (orientation: landscape){
 
@@ -424,16 +469,16 @@ form input.ng-valid.ng-touched {
 		height: 16%;
 	}
 
-	.section-title{
-		font-size:1.8rem;
-	}
+			.section-title{
+				font-size:1.8rem;
+			}
 
-	.section-description{
-		width:100%;
-		font-size:1rem;
-		font-weight: bold;
-		margin-top:-5px;
-	}
+			.section-description{
+				width:100%;
+				font-size:1rem;
+				font-weight: bold;
+				margin-top:-5px;
+			}
 
 
 	/*FOOTER PAGE*/
@@ -478,31 +523,31 @@ form input.ng-valid.ng-touched {
 		height: 17%;
 	}
 
-	.section-title{
-		font-size:2rem;
-	}
+			.section-title{
+				font-size:2rem;
+			}
 
-	.section-description{
-		width:100%;
-		font-size:1.1rem;
-		font-weight: bold;
-		margin-top:-5px;
-	}
+			.section-description{
+				width:100%;
+				font-size:1.1rem;
+				font-weight: bold;
+				margin-top:-5px;
+			}
 
 	.section-page{
 		display:flex;
 		flex-flow: row wrap;
 	}
 
-	.section-header{
-		width:100%;
-	}
+			.section-header{
+				width:100%;
+			}
 
-	.section-main{
-		width:79%;
-		flex-grow:1;
-		bottom:0;
-	}
+			.section-main{
+				width:79%;
+				flex-grow:1;
+				bottom:0;
+			}
 
 	/*sección-bulder*/
 
@@ -537,6 +582,21 @@ form input.ng-valid.ng-touched {
 
 	web-footer{
 		min-height:7vh;
+	}
+
+
+	/*FORMS*/
+	textarea,
+	input[type=text],
+	input[type=password],
+	input[type=submit],
+	input[type=email] {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 50%;
+	  color: black;
+	  border-radius: 2px 2px 2px 2px;
 	}
 
 }
