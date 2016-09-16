@@ -1,5 +1,7 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
+import angularElastic from 'angular-elastic';
+
 
 import { name as webMain } from '../imports/ui/components/webMain/webMain';
 import { name as webHeader } from '../imports/ui/components/webHeader/webHeader';
@@ -11,5 +13,6 @@ angular.module('otsogorriweb-app', [
   webMain,
   webHeader,
   webFooter,
-  CodePiwik
+  CodePiwik,
+  angularElastic
 ]);
