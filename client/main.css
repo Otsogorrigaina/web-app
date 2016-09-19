@@ -263,8 +263,9 @@ web-footer {
 }
 
 form {
+	/*
 	display:flex;
-	flex-flow: column;
+	flex-flow: column;*/
 	/*align-items:center;*/
 
 }
@@ -288,14 +289,6 @@ input[type=email] {
 	width: 100%;
   font-size: 16px;
   color: black;
-  border-radius: 2px 2px 2px 2px;
-}
-
-textarea {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 100%;
 }
 
 /*
@@ -591,12 +584,7 @@ input[type=submit]:hover {
 	input[type=password],
 	input[type=submit],
 	input[type=email] {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
 		width: 50%;
-	  color: black;
-	  border-radius: 2px 2px 2px 2px;
 	}
 
 }
